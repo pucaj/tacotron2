@@ -100,4 +100,4 @@ def create_hparams(hparams_string=None, verbose=False):
     if verbose:
         tf.compat.v1.logging.info('Final parsed hparams: %s', hparams.values())
 
-    return hparams
+    return DictObj(hparams)
